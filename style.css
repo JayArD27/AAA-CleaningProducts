@@ -5,8 +5,8 @@
 }
 /* NAV BAR */
 .logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 .cont1{
     background-color: aquamarine;
@@ -15,18 +15,32 @@
 }
 .cont1-logo{
     display: flex;
-    margin: 15px 30px 32px 30px;
+    margin: 32px 30px 32px 275px;
 }
 .list, li{
     font-style: none;
     font-size: 18px;
     text-decoration: none;
-    padding-left: 30px;
-    text-decoration:none;
     color:black;
     list-style: none;
     font-weight: bold;
     gap: 15px;
+    margin-left: 30px;
+}
+.list:hover{
+    background-color: rgb(87, 190, 156);
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.search-bar{
+    padding: 5px;
+    font-size: 15px;
+}
+.search-bar:hover{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: medium;
 }
 .cont1-ul{
     display: flex;
@@ -35,5 +49,5 @@
 .cont1-button{
     display: flex;
     align-content: space-between;
-    margin: 50px 0px 32px 600px;
+    margin: 100px 0px 32px 300px;
 }

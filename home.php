@@ -19,6 +19,7 @@
                     <li><a href="gallery.php" class="list">SHOP</a></li>
                     <li><a href="order.php" class="list">ORDER NOW</a></li>
                     <li><a href="contact.php" class="list">CONTACT</a></li>
+                    <li><input type="search" placeholder="Search Products" class="search-bar"></li>
                 </ul> 
         </div>
     </div>
