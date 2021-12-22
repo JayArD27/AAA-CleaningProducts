@@ -21,14 +21,14 @@
     font-style: none;
     font-size: 18px;
     text-decoration: none;
-    color:black;
+    color:#57635f;
     list-style: none;
     font-weight: bold;
     gap: 15px;
     margin-left: 30px;
 }
 .list:hover{
-    background-color: rgb(87, 190, 156);
+    background-color: #57be9c;
     padding: 10px;
     border-radius: 5px;
     color: aliceblue;
