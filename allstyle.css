@@ -15,7 +15,7 @@
 }
 .cont1-logo{
     display: flex;
-    margin: 32px 30px 15px 275px;
+    margin: 32px 30px 15px 270px;
 }
 .list, li{
     font-style: none;
@@ -35,7 +35,7 @@
     color:aliceblue;
 }
 .search-bar{
-    margin-left: 100px;
+    margin-left: 60px;
     padding: 5px;
     font-size: 15px;
     font-size: large;
@@ -53,7 +53,7 @@
 .cont1-button{
     display: flex;
     align-content: space-between;
-    margin: 100px 0px 32px 100px;
+    margin: 100px 0px 32px 10px;
 }
 /* LOG IN DESIGN */
 .login-page{
@@ -66,7 +66,7 @@
     margin-top: 10%;
 }
 .login{
-    /* background-color:#683a52; */
+    background-color:#DF78AE;
     width: 300px;
     height: 300px;
     border-radius: 10px;
