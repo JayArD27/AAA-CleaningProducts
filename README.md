@@ -7,7 +7,8 @@ John Alfred Ligutan
 Beneficiary/Client:
 AAA Cleaning Products
 
-COLORS USED IN PROJECTS
+COLORS USED IN LOGO
 #DF78AE
 #62C0A0
 #93E2C7
+
