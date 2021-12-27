@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="allstyle.css">
     <title>AAA - Cleaning Products</title>
 </head>
 <body>
     <div class="cont1">
         <div class="cont1-logo">
-            <img  src="./img/profileHD (2).png" class="logo" alt="AAA logo" >
+            <img  src="./img/aaalogo2.png" class="logo" alt="AAA logo" >
         </div>
          <div class="cont1-button">
                <ul class="cont1-ul">

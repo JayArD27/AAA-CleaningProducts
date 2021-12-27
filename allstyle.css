@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+/* NAV BAR */
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.cont1{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-content: center;
+}
+.cont1-logo{
+    display: flex;
+    margin: 32px 30px 15px 275px;
+}
+.list, li{
+    font-style: none;
+    font-size: 18px;
+    text-decoration: none;
+    color:#57635f;
+    list-style: none;
+    font-weight: bold;
+    gap: 15px;
+    margin-left: 30px;
+    display: flex;
+}
+.list:hover{
+    background-color: #57be9c;
+    padding: 10px;
+    border-radius: 5px;
+    color:aliceblue;
+}
+.search-bar{
+    margin-left: 100px;
+    padding: 5px;
+    font-size: 15px;
+    font-size: large;
+    width: 300px;
+}
+.search-bar:hover{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: medium;
+}
+.cont1-ul{
+    display: flex;
+    align-items: flex-start;
+}
+.cont1-button{
+    display: flex;
+    align-content: space-between;
+    margin: 100px 0px 32px 100px;
+}
+/* LOG IN DESIGN */
+.login-page{
+    background-color: #e8f3ef;
+}
+#main-logindiv{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+.login{
+    background-color:rgb(255, 128, 195);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 50px;
+}
+.login-div1,
+.login-div2{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    align-content: space-between;
+    margin-bottom: 15px;
+}
+.login-input{
+    padding: 10px;
+    width: 600px;
+    border-radius: 5px;
+}
+.login-div1{
+    margin-top: 10px;
+}
+.login-button, .signup-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginbutton{
+    padding: 10px;
+    width: 600px;
+    font-size: larger;
+    text-decoration: none;
+    color: #99a09d;
+}
+.signup-button{
+    margin-top: 100px;
+}
