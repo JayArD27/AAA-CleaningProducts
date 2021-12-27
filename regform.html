@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allstyle.css">
     <title>Registration Form</title>
 </head>
-<body>
+<body class="login-page">
     <form action="form.php">
-        <div>
-            <table border="3">
-                <tr>
-                    <th>FIRST NAME: </th>
-                    <td colspan="2"><input type="text"></td>
-                    <th>LAST NAME: </th>
-                    <td colspan="2"><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>ADDRESS: </th>
-                    <td><input type="text"></td>
-                    <th>SHIPPING ADDRESS: </th>
-                    <td><input type="text"></td>
-                    <th>CONTACT NUMBER: </th>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <th>EMAIL: </th>
-                    <td><input type="text"></td>
-                    <th>USERNAME: </th>
-                    <td><input type="text"></td>
-                    <th>PASSWORD</th>
-                    <td><input type="password"></td>
-                </tr>
-            </table>
+        <div id="regform-main">
+            <div class="regform">
+                <div class="regform-div">
+                    <h1>SIGN UP</h1>
+                </div>
+                <div class="regform-div">
+                    <p>AAA - Cleaning Products</p>
+                </div>
+                <div class="regform-div">
+                    <input type="text" placeholder="FIRSTNAME" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="text" placeholder="LASTNAME" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="text" placeholder="USERNAME or E-MAIL" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="password" placeholder="PASSWORD" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="text" placeholder="ADDRESS" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="text" placeholder="SHIPPING ADDRESS" class="login-input">
+                </div>
+                <div class="regform-div">
+                    <input type="number" placeholder="CONTACT NUMBER" class="login-input">
+                </div>
+            </div>
         </div>
     </form>
 </body>
