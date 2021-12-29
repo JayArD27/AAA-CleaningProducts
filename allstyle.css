@@ -11,6 +11,9 @@
 .cont1{
     display: flex;
     align-content: center;
+    position: fixed;
+    background-color: #e8f3ef;
+    width: 100%;
 }
 .cont1-logo{
     display: flex;
@@ -61,7 +64,7 @@
     justify-content: center;
 }
 .cont2-banner{
-    margin-top: 100px;
+    margin-top: 200px;
     width: 1200px;
     height: 600px;
 }
