@@ -55,7 +55,8 @@
     margin: 100px 0px 32px 10px;
 }
 /* START OF BANNER / CONTAINER TWO */
-.cont2-div1{
+.cont2-div1,
+.cont2-quote{
     display: flex;
     justify-content: center;
 }
@@ -64,9 +65,14 @@
     width: 1200px;
     height: 600px;
 }
-
-
-/* END OF BANNER / CONTAINER */
+.cont2-quote{
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    padding: 100px;
+    color:#57635f;
+}
+/* END OF BANNER / CONTAINER TWO */
 /* LOG IN DESIGN */
 .login-page{
     background-color: #e8f3ef;
@@ -128,3 +134,33 @@
     padding: 5px;
     font-size: medium;
 }
+ /* START OF CONTAINER THREE */
+ .cont3{
+     background-color: #d1e7de;
+ }
+.cont3-div2,
+.cont3-title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cont3-title{
+    padding: 50px;
+    color:#404644;
+}
+.cont3-img{
+    height: 300px;
+    width: 300px;
+}
+.cont3-shopnow{
+    background-color: #57be9c;
+    height: 20px;
+    padding: 10px;
+    margin: 150px 0 0 60px;
+}
+.shopnow{
+    color: #e8f3ef;
+    font-weight: bold;
+    text-decoration: none;
+}
+ /* END OF CONTAINER THREE */
