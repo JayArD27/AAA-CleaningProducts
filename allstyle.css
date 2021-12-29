@@ -137,6 +137,7 @@
  /* START OF CONTAINER THREE */
  .cont3{
      background-color: #d1e7de;
+     padding: 20px;
  }
 .cont3-div2,
 .cont3-title{
@@ -145,12 +146,13 @@
     align-content: center;
 }
 .cont3-title{
-    padding: 50px;
+    padding: 30px;
     color:#404644;
 }
 .cont3-img{
     height: 300px;
     width: 300px;
+    margin-bottom: 40px;
 }
 .cont3-shopnow{
     background-color: #57be9c;
@@ -164,3 +166,46 @@
     text-decoration: none;
 }
  /* END OF CONTAINER THREE */
+ /* START OF CONTAINER FOUR */
+.cont4,
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cont4-div1{
+    display: flex;
+    border-width: 5px;
+    border-color: #93E2C7;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 60px;
+}
+.cont4-title{
+    font-weight: bold;
+    font-size: 25px;
+    color:#4f5553;
+}
+.cont4-info{
+    color:#404644;
+    font-style: italic;
+}
+.cont4-ordernow{
+    background-color: rgb(57, 189, 189);
+    padding: 10px;
+    height: 20px;
+    margin-left: 80px;
+}
+ /* END OF CONTAINER FOUR */
+ /* START OF FOOTER */
+ .footer{
+    background-color: #404644;
+    padding: 30px;
+ }
+ .footer-text{
+     font-size: 18px;
+     color: #e4f0eb;
+     text-align: center;
+ }
+ /* END OF FOOTER */
