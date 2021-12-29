@@ -9,7 +9,6 @@
     height: 150px;
 }
 .cont1{
-    /* background-color: aquamarine; */
     display: flex;
     align-content: center;
 }
@@ -55,6 +54,19 @@
     align-content: space-between;
     margin: 100px 0px 32px 10px;
 }
+/* START OF BANNER / CONTAINER TWO */
+.cont2-div1{
+    display: flex;
+    justify-content: center;
+}
+.cont2-banner{
+    margin-top: 100px;
+    width: 1200px;
+    height: 600px;
+}
+
+
+/* END OF BANNER / CONTAINER */
 /* LOG IN DESIGN */
 .login-page{
     background-color: #e8f3ef;
@@ -75,7 +87,8 @@
 }
 .login-div1,
 .login-div2,
-.regform-div{
+.regform-div,
+.regform-submit{
     display: flex;
     justify-content: center;
     font-size: large;
@@ -111,4 +124,7 @@
     color:#57635f;
     height: 500px;
 }
-
+.regform-submit{
+    padding: 5px;
+    font-size: medium;
+}
