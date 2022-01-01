@@ -14,9 +14,10 @@ html {
 .cont1{
     display: flex;
     align-content: center;
-    position: fixed;
+    position: sticky;
     background-color: #e8f3ef;
     width: 100%;
+    margin-top: 0;
 }
 .cont1-logo{
     display: flex;
@@ -67,7 +68,7 @@ html {
     justify-content: center;
 }
 .cont2-banner{
-    margin-top: 200px;
+    margin-top: 90px;
     width: 1200px;
     height: 600px;
 }
@@ -159,6 +160,7 @@ html {
     height: 300px;
     width: 300px;
     margin-bottom: 40px;
+    /* display: flex; */
 }
 .cont3-shopnow{
     background-color: #57be9c;
@@ -215,3 +217,31 @@ html {
      text-align: center;
  }
  /* END OF FOOTER */
+
+ /* START OF PRODUCTS */
+.product-title{
+    margin-top: 90px;
+    /* position: relative; */
+    justify-content: center;
+    align-content: center;
+}
+.desc1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #404644;
+    font-size: 36px;
+}
+.prod-img{
+    display: flex;
+}
+.prod-text{
+    margin: 20px 0 0 50px;
+    color: #404644;
+}
+.prod-info{
+    margin: 0 0 50px 50px;
+    font-style: italic;
+    color: #57635f;
+}
+ /* END OF PRODUCTS */
