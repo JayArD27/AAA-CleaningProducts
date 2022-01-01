@@ -230,7 +230,7 @@ html {
     justify-content: center;
     justify-items: center;
     color: #404644;
-    font-size: 36px;
+    font-size: 40px;
 }
 .prod-img{
     display: flex;
@@ -238,6 +238,7 @@ html {
 .prod-text{
     margin: 20px 0 0 50px;
     color: #404644;
+    font-size: 30px;
 }
 .prod-info{
     margin: 0 0 50px 50px;
