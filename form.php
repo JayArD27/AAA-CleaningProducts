@@ -40,7 +40,7 @@
                     <input type="number" placeholder="CONTACT NUMBER" class="login-input" name="number">
                 </div>
                 <div class="regform-submit">
-                    <input type="submit" class="regform-submit" name="sub">
+                    <input type="submit" class="regform-submit" name="sub" value="Sign Up">
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@ if(isset($_POST['sub'])){
 if($insert == true){
 ?>
 <script>
-    alert ("REGISTERED THANK YOU FOR SIGNING IN");
+    alert ("REGISTERED");
 </script>
 <?php
 }else{
