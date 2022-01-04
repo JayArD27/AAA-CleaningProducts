@@ -9,10 +9,9 @@
     <title>LOG IN</title>
 </head>
 <body class="login-page">
-    <form method="POST" action="login.php">
+    <form method="POST" action="index.php">
         <div id="main-logindiv">
             <div class="login">
-
             <div class="regform-div">
                     <h1>LOG IN</h1>
                 </div>
@@ -21,14 +20,14 @@
                 </div>
 
                 <div class="login-div1">
-                    <input type="text" name="username" placeholder="E-MAIL OR USERNAME" class="login-input" name="uname">
+                    <input type="text" name="username" placeholder="E-MAIL OR USERNAME" class="login-input">
                 </div>
                 <div class="login-div2">
-                    <input type="password" name="password" placeholder="PASSWORD"  class="login-input" name="password">
+                    <input type="password" name="password" placeholder="PASSWORD"  class="login-input">
                 </div>
                 <div class="login-button"><button class="loginbutton" type="submit" name="submit">LOG IN</button></div>
                 <div class="signup-button">
-                    <p>Can't Log-in? <a href="regform.html">Sign Up Now</a></p>
+                    <p>Can't Log-in? <a href="form.php">Sign Up Now</a></p>
                 </div>
             </div>
         </div>
@@ -44,25 +43,32 @@ include "db_connect.php";
 // }
 
 if(isset($_POST['submit'])){
-    $username = $_POST['uname'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM tbl_login WHERE USER = '$username' AND PASSWORD = '$password'";
+    $sql = "SELECT * FROM tbl_account WHERE USERNAME = '$username' AND PASSWORD = '$password'";
     $logs = "INSERT INTO tbl_userlogs (USERNAME,ACTION,DATE) VALUES ('$username','LOGGED IN',NOW())";
 
     $result = $conn->query($sql);
     $result1 = $conn->query($logs);
 
-    if($username == true){
-        header("refresh:0;url=home.html");
-    }else{
-        ?>
-        <script>
-            alert("Invalid Account");
-        </script>
-        <?php
-                echo "Invalid Account";
-            }
-        }
+    if($result->num_rows > 0 ){
+        $row = $result->fetch_assoc();
+        $position = $row['POSITION'];
         
-        ?>
+        if($position == "USER"){
+            header("refresh:0;url=home.html");
+        }elseif($position == "ADMIN"){
+            header("refresh:0;url=form.php");
+        }
+    }else{
+    ?>
+    <script>
+        alert("Invalid Account");
+    </script>
+    <?php
+        echo "Invalid Account";
+        }
+    }
+        
+?>
