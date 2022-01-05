@@ -19,7 +19,7 @@
                     <li><a href="home.html" class="list">HOME</a></li>
                     <li><a href="products.html" class="list">SHOP</a></li>
                     <li><a href="order.php" class="list">ORDER NOW</a></li>
-                    <li><a href="about.php" class="list">ABOUT US</a></li>
+                    <li><a href="aboutus.html" class="list">ABOUT US</a></li>
                     <li><a href="contact.php" class="list">CONTACT</a></li>
                     <li><input type="search" placeholder="Search Products" class="search-bar"></li>
                 </ul> 
