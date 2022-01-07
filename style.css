@@ -9,7 +9,6 @@ body{
     background-color: white;
     background-size: cover;
     background-position: center;
-    
 }
 .main{
     width: 50%;
@@ -22,6 +21,7 @@ body{
     left: 50%;
     border-radius: 10px;
     transform: translate(-50%,-50%);
+    margin-top: 100px;
 }
 .img{
     height: 65px;
