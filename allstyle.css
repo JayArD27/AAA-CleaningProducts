@@ -93,6 +93,7 @@ html {
 .login,
 .regform{
     background-color:#DF78AE;
+    color:#313634;
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -109,7 +110,7 @@ html {
     margin-bottom: 15px;
 }
 .login-input{
-    padding: 10px;
+    padding: 5px;
     width: 600px;
     border-radius: 5px;
 }
@@ -122,7 +123,7 @@ html {
     align-items: center;
 }
 .loginbutton{
-    padding: 10px;
+    padding: 20px;
     width: 600px;
     font-size: larger;
     text-decoration: none;
@@ -138,7 +139,7 @@ html {
     height: 500px;
 }
 .regform-submit{
-    padding: 5px;
+    padding: 2px;
     font-size: medium;
 }
  /* START OF CONTAINER THREE */
@@ -247,64 +248,3 @@ html {
 }
  /* END OF PRODUCTS */
  
- /* START OF CONTACT US */
-
-#div1{
-	width:495px;
-	height:600px;
-	padding:6%;
-	margin-top:0%;
-	margin-left:30%;
-	border:3px solid #6e3653;
-    ;
-    border-radius: 10px;
-	background-color:#DF78AE;
-	font-family: Helvetica, sans-serif;
-	color:white;
-}
-
-textarea {
-  height: 100px;
-}
-input, select, textarea {
-  border-radius: 2px;
-  border: 2px solid #ccc;
-  box-sizing: border-box;
-  font-size: 1.25em;
-  font-family: Helvetica, sans-serif;
-  width: 500px;
-  padding: 8px;
-
-
-}
-
-button {
-  height: 70px;
-  width: 200px;
-  margin-top: 45px;
-  margin-left:30%;
-  background: #62C0A0;
-  color: white;
-  border: 2px solid #93E2C7;
-  font-size: 1.25em;
-  font-family: 'Rockwell';
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  border: 2px solid #459076;
-}
-
-.myDiv{
-  color: white;
-  font-size: 2em;
-  font-family: Helvetica, sans-serif;
-  height:1px;
-  margin-left: 60px;
-  margin-top:60px;
-}
-.contact-title{
-    padding: 30px;
-}
- /* END OF CONTACT US */
