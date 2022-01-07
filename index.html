@@ -9,18 +9,25 @@
     <title>LOG IN</title>
 </head>
 <body class="login-page">
-    <form method="POST" action="login.php">
+    <form method="POST" action="index.php">
         <div id="main-logindiv">
             <div class="login">
+            <div class="regform-div">
+                    <h1>LOG IN</h1>
+                </div>
+                <div class="regform-div">
+                    <p>AAA - Cleaning Products</p>
+                </div>
+
                 <div class="login-div1">
                     <input type="text" name="username" placeholder="E-MAIL OR USERNAME" class="login-input">
                 </div>
                 <div class="login-div2">
                     <input type="password" name="password" placeholder="PASSWORD"  class="login-input">
                 </div>
-                <div class="login-button"><button class="loginbutton"><a href="home.html" class="loginbutton">LOG IN</a></button></div>
+                <div class="login-button"><button class="loginbutton" type="submit" name="submit">LOG IN</button></div>
                 <div class="signup-button">
-                    <p>Can't Log-in? <a href="regform.html">Sign Up Now</a></p>
+                    <p>Can't Log-in? <a href="form.php">Sign Up Now</a></p>
                 </div>
             </div>
         </div>

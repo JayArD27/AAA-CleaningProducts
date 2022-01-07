@@ -33,6 +33,7 @@
         </div>
     </form>
 </body>
+</html>
 <?php
 include "db_connect.php";
 
