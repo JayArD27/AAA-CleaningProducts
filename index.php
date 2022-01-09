@@ -57,10 +57,10 @@ if(isset($_POST['submit'])){
         $row = $result->fetch_assoc();
         $position = $row['POSITION'];
         
-        if($position == "USER"){
-            header("refresh:0;url=home.html");
+        if($position == "EMPLOYEE"){
+            header("refresh:0;url=order.html");
         }elseif($position == "ADMIN"){
-            header("refresh:0;url=form.php");
+            header("refresh:0;url=home.html");
         }
     }else{
     ?>
