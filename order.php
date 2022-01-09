@@ -1,128 +1,222 @@
 <?php
 if(isset($_POST['checkout'])){
-    $total = 0;
+
     $qtyDishB = $_POST['qtyDB'];
+    $qtyDishY = $_POST['qtyDY'];
+    $qtyDishBs = $_POST['qtyDBs'];
+    $qtyDishYs = $_POST['qtyDYs'];
+    $qtyDishGs = $_POST['qtyDGs'];
+    $qtyFB = $_POST['qtyFB'];
+    $qtyFL = $_POST['qtyFL'];
+    $qtyPOW = $_POST['qtyPOW'];
+    $qtyToilet = $_POST['qtyToilet'];
+    $qtySponge = $_POST['qtySponge'];
+    $total = 0;
     
-
-
-    echo "<h1>CHECKOUT</h1>";
+    
 
     if(isset($_POST['bigdishwashingblue'])){
         $bigDishwashingBlue = 38;
-        $bigDishBlue = "dishwashing -".$bigDishwashingBlue * $qtyDishB;
+        $bigDishBlue = "All Mighty - 970ml Dishwashing Liquid - Antibacterial --  PHP. ".$bigDishwashingBlue;
+        $bigDishBlueT = $bigDishwashingBlue * $qtyDishB;
         $total = $total + $bigDishwashingBlue; 
     }else{
-        // $bigDishwashingBlue = 0;
         $qtyDishB = NULL;
         $bigDishBlue = NULL;
+        $bigDishBlueT = NULL;
         $total = $total;
     }
 
     if(isset($_POST['bigdishwashingyellow'])){
         $bigDishwashingYellow = 38;
-        $bigDishYellow= "<br>Yellow dishwashing -".$bigDishwashingYellow;
+        $bigDishYellow= "All Mighty - 970ml Dishwashing Liquid - Lemon Scent --  PHP. ".$bigDishwashingYellow;
+        $bigDishYellowT = $bigDishwashingYellow * $qtyDishY;
         $total = $total + $bigDishwashingYellow; 
     }else{
-        // $bigDishwashingYellow = 0;
+        $qtyDishY  = NULL;
         $bigDishYellow = NULL;
+        $bigDishYellowT = NULL;
         $total = $total;
     }
 
     if(isset($_POST['dishwashingblue'])){
-        $diswashingBlue = 25;
-        $dishBlue= "<br>Blue dishwashing -".$diswashingBlue;
-        $total = $total + $diswashingBlue; 
+        $dishwashingBlue = 25;
+        $dishBlue= "All Mighty - 400ml Dishwashing Liquid - Antibacterial --  PHP. ".$dishwashingBlue;
+        $smallDishBlueT = $dishwashingBlue * $qtyDishBs;
+        $total = $total + $dishwashingBlue; 
     }else{
-        // $diswashingBlue = 0;
         $dishBlue = NULL;
+        $qtyDishBs = NULL;
+        $smallDishBlueT  = NULL;
         $total = $total;
     }
 
     if(isset($_POST['dishwashingyellow'])){
-        $diswashingYellow = 25;
-        $dishYellow= "<br>Yellow dishwashing -".$diswashingYellow;
-        $total = $total + $diswashingYellow; 
+        $dishwashingYellow = 25;
+        $dishYellow= "All Mighty - 400ml Dishwashing Liquid -  Lemon scent --  PHP. ".$dishwashingYellow;
+        $smallDishYellowT = $dishwashingYellow * $qtyDishYs;
+        $total = $total + $dishwashingYellow; 
     }else{
-        // $diswashingYellow = 0;
         $dishYellow = NULL;
+        $qtyDishYs = NULL;
+        $smallDishYellowT  = NULL;
         $total = $total;
     }
 
     if(isset($_POST['dishwashinggreen'])){
-        $diswashingGreen = 25;
-        $dishGreen= "<br>Green dishwashing -".$diswashingGreen;
-        $total = $total + $diswashingGreen; 
+        $dishwashingGreen = 25;
+        $dishGreen= "All Mighty - 400ml Dishwashing Liquid -  Calamansi scent -- PHP. ".$dishwashingGreen;
+        $smallDishGreenT = $dishwashingGreen * $qtyDishGs;
+        $total = $total + $dishwashingGreen; 
     }else{
-        // $diswashingGreen = 0;
         $dishGreen = NULL;
+        $qtyDishGs  = NULL;
+        $smallDishGreenT  = NULL;
         $total = $total;
     }
 
     if(isset($_POST['fabriconblue'])){
         $fabriconBlueLarge = 38;
-        $fabriconBlueL= "<br>Fabricon Blue -".$fabriconBlueLarge;
+        $fabriconBlueL= "All Mighty - 970ml Fabric Softener - Ocean fresh --  PHP. ".$fabriconBlueLarge;
+        $fabriconBlueT = $fabriconBlueLarge * $qtyFB;
         $total = $total + $fabriconBlueLarge; 
     }else{
-        // $diswashingGreen = 0;
         $fabriconBlueL = NULL;
+        $fabriconBlueT = NULL;
+        $qtyFB = NULL;
         $total = $total;
     }
 
     if(isset($_POST['fabriconlavender'])){
         $fabriconLavLarge = 38;
-        $fabriconLavL= "<br>Fabricon lavender-".$fabriconLavLarge;
+        $fabriconLavL= "All Mighty - 970ml Fabric Softener - Lavender scent -- PHP. ".$fabriconLavLarge;
+        $fabriconLavT = $fabriconLavLarge * $qtyFL;
         $total = $total + $fabriconLavLarge; 
     }else{
-        // $diswashingGreen = 0;
         $fabriconLavL = NULL;
+        $fabriconLavT = NULL;
+        $qtyFL = NULL;
         $total = $total;
     }
 
     if(isset($_POST['powder'])){
         $powderL = 38;
-        $powder= "<br>Fabricon Blue -".$powderL ;
+        $powder= "Ultramatic Powder - 1000 grams --  PHP. ".$powderL ;
+        $powderT = $powderL * $qtypowder;
         $total = $total + $powderL ; 
     }else{
-        // $diswashingGreen = 0;
         $powder = NULL;
-        $total = $total;
-    }
-
-    if(isset($_POST['powder'])){
-        $powderL = 38;
-        $powder= "<br>Powder -".$powderL ;
-        $total = $total + $powderL ; 
-    }else{
-        // $diswashingGreen = 0;
-        $powder = NULL;
+        $powderT = NULL;
+        $qtypowder = NULL;
         $total = $total;
     }
 
     if(isset($_POST['bowlcleaner'])){
         $bowlcleanerL = 38;
-        $bowlcleaner= "<br>Powder -".$bowlcleanerL ;
+        $bowlcleaner= "Exel - Toilet Bowl Cleaner --  PHP. ".$bowlcleanerL ;
+        $bowlcleanerT = $bowlcleanerL * $qtyToilet;
         $total = $total +$bowlcleanerL ; 
     }else{
-        // $diswashingGreen = 0;
         $bowlcleaner = NULL;
+        $bowlcleanerT  = NULL;
+        $qtyToilet  = NULL;
         $total = $total;
     }
 
     if(isset($_POST['sponge'])){
         $spongeS = 38;
-        $sponge = "<br>Powder -".$spongeS ;
+        $sponge = "Scotch Brite - Sponge --  PHP. ".$spongeS ;
+        $spongeT = $spongeS * $qtySponge;
         $total = $total +$spongeS ; 
     }else{
-        // $diswashingGreen = 0;
         $sponge = NULL;
+        $spongeT = NULL;
+        $qtySponge = NULL;
         $total = $total;
     }
     
-   
-    echo "item <br>".$bigDishBlue.$bigDishYellow.$dishGreen.$dishBlue.$dishYellow
-    .$fabriconBlueL.$fabriconLavL.$powder.$bowlcleaner.$sponge;
-    echo "<br>total:".$total;
-}
+    // $totalprice = 
 
+    echo "<table>";
+    echo "<tr>
+            <th colspan=3>
+            <h1>CHECKOUT</h1>
+            </th>
+          </tr>";
+    echo "<tr>";
+        echo "<th>ITEMS</th>";
+        echo "<th>QTY</th>";
+        echo "<th>TOTAL</th>";
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$bigDishBlue;
+        echo "<td>&nbsp &nbsp".$qtyDishB;
+        echo "<td>".$bigDishBlueT;
+    echo "</tr>";
+    echo "<tr>"; 
+        echo "<td>".$bigDishYellow;
+        echo "<td>&nbsp &nbsp".$qtyDishY;
+        echo "<td>".$bigDishYellowT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$dishBlue;
+        echo "<td>&nbsp &nbsp".$qtyDishBs;
+        echo "<td>".$smallDishBlueT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$dishYellow;
+        echo "<td>&nbsp &nbsp".$qtyDishYs;
+        echo "<td>".$smallDishYellowT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$dishGreen;
+        echo "<td>&nbsp &nbsp".$qtyDishGs;
+        echo "<td>".$smallDishGreenT;
+    echo "</tr>";
+
+    echo "<tr>";
+        echo "<td>".$fabriconBlueL;
+        echo "<td>&nbsp &nbsp".$qtyFB;
+        echo "<td>".$fabriconBlueT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$fabriconLavL;
+        echo "<td>&nbsp &nbsp".$qtyFL;
+        echo "<td>".$fabriconLavT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$powder;
+        echo "<td>&nbsp &nbsp".$qtyPOW;
+        echo "<td>".$powderT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$bowlcleaner;
+        echo "<td>&nbsp &nbsp".$qtyToilet;
+        echo "<td>".$bowlcleanerT;
+    echo "</tr>";
+    echo "<tr>";
+        echo "<td>".$sponge;
+        echo "<td>&nbsp &nbsp".$qtySponge;
+        echo "<td>".$spongeT;
+    echo "</tr>";
+    echo "<tr>
+            <th colspan=2>
+                <h3>TOTAL ITEM PRICE</h2>
+            </th>
+            <td>
+                
+            </td>
+          </tr>";
+echo "</table>";
+   
+    // echo "item <br>".$bigDishBlue.$bigDishYellow.$dishGreen.$dishBlue.$dishYellow
+    // .$fabriconBlueL.$fabriconLavL.$powder.$bowlcleaner.$sponge;
+    // echo "total item".$bigDishBlueT;
+    // echo "<br>total:".$total;
+}
+// echo "<tr>";
+//         echo "<td>";
+//         echo "</td>";
+// echo "</tr>";
 
 ?>
