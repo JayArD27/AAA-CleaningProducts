@@ -10,6 +10,8 @@
     <title>AAA - Order Now</title>
 </head>
 <body>
+    <form method=POST action="order.php">
+
     <div class="cont1">
         <div class="cont1-logo">
             <img  src="./img/aaalogo2.png" class="logo" alt="AAA logo" >
@@ -42,8 +44,8 @@
                <h3>All Mighty - 970ml Dishwashing Liquid</h3>
                <p>Price: PHP. 38.00</p>
                <p>970ml - Antibacterial Dishwashing liquid.</p>
-               <input type="number" placeholder="QTY" class="qty-design">
-               <button value="" class="addtocart">ADD TO CART</button>
+               <input type="number" placeholder="QTY" class="qty-design" name="qtyDB">
+               <input type="checkbox"  name="bigdishwashingblue"> Add to Cart
            </div>
            <div> <img src="img/bigdishwashing_yellow.png" alt="" class="items-img"></div>
            <div class="items-description">
@@ -51,7 +53,7 @@
                <p>Price: PHP. 38.00</p>
                <p>970ml - Lemon Scent Dishwashing liquid.</p>
                <input type="number" placeholder="QTY" class="qty-design">
-               <button value="" class="addtocart">ADD TO CART</button>
+               <input type="checkbox" name="bigdishwashingyellow"> Add to Cart
            </div>
         </div>
 
@@ -61,8 +63,8 @@
                 <h3>All Mighty - 400ml Dishwashing Liquid</h3>
                 <p>Price: PHP. 25.00</p>
                 <p>400ml - Antibacterial Dishwashing liquid.</p>
-                <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="number" placeholder="QTY" class="qty-design" name="qtyDishwashingBlue">
+                <input type="checkbox" name="dishwashingblue"> Add to Cart
             </div>
             <div> <img src="img/dishwashing_yellow.png" alt="" class="items-img"></div>
             <div class="items-description">
@@ -70,7 +72,7 @@
                 <p>Price: PHP. 25.00</p>
                 <p>400ml - Lemon scent Dishwashing liquid.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="dishwashingyellow"> Add to Cart
             </div>
          </div>
 
@@ -81,7 +83,7 @@
                 <p>Price: PHP. 25.00</p>
                 <p>400ml - Calamansi scent Dishwashing liquid.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="dishwashinggreen"> Add to Cart
             </div>
          </div>
 
@@ -97,7 +99,7 @@
                 <p>Price: PHP. 38.00</p>
                 <p>970ml - Ocean fresh Fabric Softener.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="fabriconblue"> Add to Cart
             </div>
             <div> <img src="img/fabriccon_lavender.png" alt="" class="items-img"></div>
             <div class="items-description">
@@ -105,7 +107,7 @@
                 <p>Price: PHP. 38.00</p>
                 <p>970ml - Lavender scent Fabric Softener.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="fabriconlavender"> Add to Cart
             </div>
          </div>
 
@@ -116,7 +118,7 @@
                 <p>Price: PHP. 38.00</p>
                 <p>1000 grams - Powder Fabric Conditioner.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="powder"> Add to Cart
             </div>
          </div>
 
@@ -132,7 +134,7 @@
                 <p>Price: PHP. 38.00</p>
                 <p>Best for Toilet Bowl Cleaning.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="bowlcleaner"> Add to Cart
             </div>
             <div> <img src="img/sponge.png" alt="" class="items-img"></div>
             <div class="items-description">
@@ -140,11 +142,22 @@
                 <p>Price: PHP. 15.00</p>
                 <p>Bilis Linis Easy Linis Sponge.</p>
                 <input type="number" placeholder="QTY" class="qty-design">
-                <button value="" class="addtocart">ADD TO CART</button>
+                <input type="checkbox" name="sponge"> Add to Cart
             </div>
          </div>
-
+        <div>
+            <center><a href="order.php"></a><input type="submit" value="CHECKOUT" name="checkout"></center></a></center>
+        </div>
     </div>
+</form>
 
+  <!-- START OF FOOTER -->
+  <div class="footer">
+    <div>
+        <p class="footer-text">est. 2021 - AAA-Cleaning Products</p>
+        <p class="footer-text">CONTACT US: 09876543211</p>
+    </div>
+</div>
+<!-- END OF FOOTER -->
 </body>
 </html>
