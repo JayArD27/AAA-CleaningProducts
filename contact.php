@@ -21,7 +21,7 @@
                     <li><a href="order.php" class="list">ORDER NOW</a></li>
                     <li><a href="aboutus.html" class="list">ABOUT US</a></li>
                     <li><a href="contact.php" class="list">CONTACT</a></li>
-                    <li><input type="search" placeholder="Search Products" class="search-bar"></li>
+                    <!-- <li><input type="search" placeholder="Search Products" class="search-bar"></li> -->
                 </ul> 
         </div>
     </div>
