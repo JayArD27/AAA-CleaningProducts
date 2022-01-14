@@ -66,6 +66,12 @@
 
 </div>
 </form>
+<div class="footer">
+        <div>
+            <p class="footer-text">est. 2021 - AAA-Cleaning Products</p>
+            <p class="footer-text">CONTACT US: 09876543211 or <a href="regform.html">Sign in</a></p>
+        </div>
+</div>
 </body>
 </html>
 

@@ -11,6 +11,7 @@
     <form method=POST action="view.php">
     <input type="search" name=search placeholder="Search item">
     <input type="submit" name="searchsub" value="Search">
+    <button><a href='productS.php'>ADD PRODUCT</a></button>
     </form>
 </body>
 </html>

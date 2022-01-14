@@ -120,3 +120,15 @@ button:hover {
     padding: 30px;
 }
  /* END OF CONTACT US */
+  /* START OF FOOTER */
+  .footer{
+    background-color: #404644;
+    padding: 30px;
+    margin-top: 60px;
+ }
+ .footer-text{
+     font-size: 18px;
+     color: #e4f0eb;
+     text-align: center;
+ }
+ /* END OF FOOTER */
