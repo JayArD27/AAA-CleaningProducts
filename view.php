@@ -60,7 +60,8 @@ if($result->num_rows > 0){
 		echo "<td>".$row['P_TOTAL'];
 		$total = $total + $row['P_TOTAL'];
 
-		echo "<td> <a href='update.php?id=".$row['ID']."'>Edit</a>";
+		echo "<td> <a href='update.php?id=".$row['ID']."'>Edit</a>&nbsp<a href='delete.php?id=".$row['ID']."'>Delete</a>";
+        
     }
     echo "<tr>";
 	echo "<th colspan=8>Total Product Price: ".$total;
