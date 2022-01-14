@@ -26,7 +26,7 @@ $conn->close();
     <title>AAA - Update Product</title>
 </head>
 <body>
-    <form method=POST action="update_product.php">
+    <form method=POST action="update_record.php">
         <table>
             <tr>
                 <th colspan=2>UPDATE PRODUCT</th>
