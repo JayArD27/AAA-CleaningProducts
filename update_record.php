@@ -2,12 +2,6 @@
 include "view.php";
 
 
-//  if($conn->connect_error){
-//     echo $conn->connect_error;
-// }else{
-//     echo "<br>Connected";
-// }
-
 if(isset($_POST['sub'])){
     $ID = $_POST['prod_id'];
     $Pname = $_POST['prod_name'];

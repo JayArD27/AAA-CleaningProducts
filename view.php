@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/allstyle.css">
     <link rel="icon" href="img/aaalogo2.png">
     <title>AAA - View Products</title>
 </head>
 <body>
+    <div class="cont1">
+        <div class="cont1-logo">
+            <img  src="./img/aaalogo2.png" class="logo" alt="AAA logo" >
+        </div>
+         <div class="cont1-button">
+               <ul class="cont1-ul">
+                    <li><a href="home.html" class="list">HOME</a></li>
+                    <li><a href="products.html" class="list">SHOP</a></li>
+                    <li><a href="order.html" class="list">ORDER NOW</a></li>
+                    <li><a href="aboutus.html" class="list">ABOUT US</a></li>
+                    <li><a href="contact.php" class="list">CONTACT</a></li>
+                </ul> 
+    </div>
+    </div>
     <form method=POST action="view.php">
     <input type="search" name=search placeholder="Search item">
     <input type="submit" name="searchsub" value="Search">
