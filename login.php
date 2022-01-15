@@ -9,7 +9,7 @@
     <title>LOG IN</title>
 </head>
 <body class="login-page">
-    <form method="POST" action="index.php">
+    <form method="POST" action="login.php">
         <div id="main-logindiv">
             <div class="login">
             <div class="regform-div">
@@ -52,9 +52,9 @@ if(isset($_POST['submit'])){
         $position = $row['POSITION'];
         
         if($position == "EMPLOYEE"){
-            header("refresh:0;url=order.html");
+            header("refresh:0;url=employee/home.html");
         }elseif($position == "ADMIN"){
-            header("refresh:0;url=home.html");
+            header("refresh:0;url=admin/home.html");
         }
     }else{
     ?>
