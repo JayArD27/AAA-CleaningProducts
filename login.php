@@ -55,6 +55,8 @@ if(isset($_POST['submit'])){
             header("refresh:0;url=employee/home.html");
         }elseif($position == "ADMIN"){
             header("refresh:0;url=admin/home.html");
+        }elseif($position == "USER"){
+            header("refresh:0;url=user/home.html");
         }
     }else{
     ?>
