@@ -23,6 +23,7 @@ $conn->close();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allstyle.css">
+    <link rel="stylesheet" href="../style/orderproductstyle.css">
     <link rel="icon" href="../img/aaalogo2.png">
     <title>AAA - Update Product</title>
 </head>
@@ -42,39 +43,45 @@ $conn->close();
         </div>
     </div>
     <form method=POST action="update_record.php">
-        <table>
+        <table class="table">
             <tr>
-                <th colspan=2>UPDATE PRODUCT</th>
+                <th colspan=2 class="title-table">UPDATE PRODUCT</th>
             </tr>
             <tr>
-                <td>PRODUCT ID:</td>
+                <td class="info-table">PRODUCT ID:</td>
                 <td><input type="text" name=prod_id value="<?php echo $pid?>" readonly></td>
             </tr>
 
             <tr>
-                <td>PRODUCT NAME:</td>
+                <td class="info-table">PRODUCT NAME:</td>
                 <td><input type="text" name=prod_name value="<?php echo $pname?>"></td>
             </tr>
 
             <tr>
-                <td>PRODUCT CATEGORY:</td>
+                <td class="info-table">PRODUCT CATEGORY:</td>
                 <td><input type="text" name=prod_cat value="<?php echo $pcat?>"></td>
             </tr>
 
             <tr>
-                <td>QUANTITY:</td>
+                <td class="info-table">QUANTITY:</td>
                 <td><input type="text" name=prod_quan value="<?php echo $pquan?>"></td>
             </tr>
 
             <tr>
-                <td>PRICE:</td>
+                <td class="info-table">PRICE:</td>
                 <td><input type="text" name=prod_price value="<?php echo $pprice?>"></td>
             </tr>
 
             <tr>
-                <th colspan=2><input type="submit" name=sub value="UPDATE"></th>
+                <th colspan=2><input type="submit" name=sub value="UPDATE" class="submit-button"></th>
             </tr>
         </table>
     </form>
+    <div class="footer">
+        <div>
+            <p class="footer-text">est. 2021 - AAA-Cleaning Products</p>
+            <p class="footer-text">CONTACT US: 09876543211 or <a href="regform.html">Sign in</a></p>
+        </div>
+    </div>
 </body>
 </html>

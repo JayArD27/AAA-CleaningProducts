@@ -23,6 +23,7 @@ $conn->close();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allstyle.css">
+    <link rel="stylesheet" href="../style/orderproductstyle.css">
     <link rel="icon" href="../img/aaalogo2.png">
     <title>AAA - Update Product</title>
 </head>
@@ -42,15 +43,15 @@ $conn->close();
         </div>
     </div>
     <form method=POST action="delete_record.php">
-        <table>
+        <table class="table" class="title-table">
             <tr>
-                <th colspan=2>DELETE PRODUCT</th>
+                <th colspan=2 class="title-table th-del">DELETE PRODUCT?</th>
             </tr>
             <tr>
-                <td>Are you sure to delete -- <?php echo $pname?></td>
-                <td><input type="text" name=prod_id value="<?php echo $pid?>" readonly></td>
+                <td>Are you sure to delete</td>
+                <td><input type="text" name=prod_id value="<?php echo $pid?> --- <?php echo $pname?>" readonly></td>
             </tr>
-                <th colspan=2><input type="submit" name=sub value="DELETE"></th>
+                <th colspan=2 class="th-del"><input type="submit" name=sub value="DELETE" class="submit-button-del"></th>
             </tr>
         </table>
     </form>

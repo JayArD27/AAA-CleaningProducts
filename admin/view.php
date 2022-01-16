@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allstyle.css">
+    <link rel="stylesheet" href="../style/orderproductstyle.css">
     <link rel="icon" href="../img/aaalogo2.png">
     <title>AAA - View Products</title>
 </head>
@@ -25,12 +26,13 @@
     </div>
     </div>
     <form method=POST action="view.php">
-    <input type="search" name=search placeholder="Search item">
-    <input type="submit" name="searchsub" value="Search">
-    <button><a href='productS.php'>ADD PRODUCT</a></button>
+    <div class=search-div>
+        <input type="search" name=search placeholder="Search item" class=search-tab>
+        <input type="submit" name="searchsub" value="Search">
+        <button><a href='products.php'>ADD PRODUCT</a></button>
+    </div>
     </form>
-</body>
-</html>
+
 <?php
 include "db_connect.php";
 
@@ -50,40 +52,48 @@ $result=$conn->query($sql);
 $total = 0;
 
 if($result->num_rows > 0){
-	echo "<table border=1>";
+    echo "<div class=order-div>";
+	echo "<table class=table>";
 	echo "<tr>";
-	echo "<th> PRODUCT ID";
-	echo "<th> PRODUCT NAME";
-	echo "<th> PRODUCT CATEGORY";
-	echo "<th> PRICE";
-	echo "<th> QUANTITY";
-	echo "<th> EXPIRATION DATE";
-	echo "<th> TOTAL PRICE";
-	echo "<th colspan=2> ACTION";
+    echo "<tH colspan=9 class=title-table> INVENTORY";
+	echo "<tr>";
+	echo "<th class=info-table-inven> PRODUCT ID";
+	echo "<th class=info-table-inven> PRODUCT NAME";
+	echo "<th class=info-table-inven> PRODUCT CATEGORY";
+	echo "<th class=info-table-inven> PRICE";
+	echo "<th class=info-table-inven> QUANTITY";
+	echo "<th class=info-table-inven> EXPIRATION DATE";
+	echo "<th class=info-table-inven> TOTAL PRICE";
+	echo "<th colspan=2 class=info-table-inven> ACTION";
 
     while($row=$result->fetch_assoc()){
         echo "<tr>";
-        echo "<td>".$row['ID'];
-		echo "<td>".$row['P_NAME'];
-		echo "<td>".$row['P_CATEGORY'];
-		echo "<td>".$row['P_PRICE'];
+        echo "<td class=info-table-inven>".$row['ID'];
+		echo "<td class=info-table-inven>".$row['P_NAME'];
+		echo "<td class=info-table-inven>".$row['P_CATEGORY'];
+		echo "<td class=info-table-inven>".$row['P_PRICE'];
 
         if($row['P_QTY']<=5){
-            echo "<td>".$row['P_QTY'];
+            echo "<td class=info-table-inven>".$row['P_QTY'];
         }else{
-            echo "<td>".$row['P_QTY'];
+            echo "<td class=info-table-inven>".$row['P_QTY'];
         }
-        echo "<td>".$row['EXPR_DATE'];
-		echo "<td>".$row['P_TOTAL'];
+        echo "<td class=info-table-inven>".$row['EXPR_DATE'];
+		echo "<td class=info-table-inven>".$row['P_TOTAL'];
 		$total = $total + $row['P_TOTAL'];
 
-		echo "<td> <a href='update.php?id=".$row['ID']."'>Edit</a>
-        <td><a href='delete.php?id=".$row['ID']."'>Delete</a>";
+		echo "<td class=info-table-inven> <a href='update.php?id=".$row['ID']."'>Edit</a>
+        <td class=info-table-inven><a href='delete.php?id=".$row['ID']."'>Delete</a>";
         
     }
     echo "<tr>";
-	echo "<th colspan=8>Total Product Price: ".$total;
+	echo "<th colspan=9 class=info-table-inven-total>Total Product Price: ".$total;
 }else{
-	echo "<br>No Records Found";
+	echo "<br><center><p>No Records Found</p></center>";
 }
+    echo "</div>";
+    echo "</table>";
 ?>
+
+</body>
+</html>
