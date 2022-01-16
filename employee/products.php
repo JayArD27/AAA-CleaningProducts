@@ -40,7 +40,7 @@
                         <option value="NONE">-----------</option>
                         <option value="DISHWASHING">DISHWASHING</option>
                         <option value="FABRIC CONDITIONER">FABRIC CONDITIONER</option>
-                        <option value="OTHERS">OtdERS</option>
+                        <option value="OTHERS">OTHERS</option>
                     </select>
                 </td>
             </tr>
