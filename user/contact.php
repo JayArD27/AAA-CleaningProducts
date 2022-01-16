@@ -9,21 +9,20 @@
     <title>CONTACT US</title>
 </head>
 <body>
-
-<div class="cont1">
+    <div class="cont1">
         <div class="cont1-logo">
             <img  src="../img/aaalogo2.png" class="logo" alt="AAA logo" >
         </div>
          <div class="cont1-button">
                <ul class="cont1-ul">
                     <li><a href="home.html" class="list">HOME</a></li>
-                    <li><a href="products.html" class="list">SHOP</a></li>
-                    <li><a href="order.html" class="list">ORDER NOW</a></li>
+                    <li><a href="view.php" class="list">INVENTORY</a></li>
+                    <li><a href="orderproduct.php" class="list">ORDER</a></li>
                     <li><a href="aboutus.html" class="list">ABOUT US</a></li>
                     <li><a href="contact.php" class="list">CONTACT</a></li>
                 </ul> 
         </div>
-</div>
+    </div>
 
 <center>
 <div class="myDiv">
@@ -33,11 +32,11 @@
 </center>
 <form method=POST action=contact.php>
 <div id=div1>
-<p>NAME</p> <input type=text name=name placeholder="Lastname, Firstname M.">
-<p>EMAIL</p> <input type=text name=email placeholder="juandelacruz@gmail.com">
-<p>PHONE/TEL. NO.</p> <input type=text name=phone placeholder="09--">
+<p class=title>NAME</p> <input type=text name=name placeholder="Lastname, Firstname M.">
+<p class=title>EMAIL</p> <input type=text name=email placeholder="juandelacruz@gmail.com">
+<p class=title>PHONE/TEL. NO.</p> <input type=text name=phone placeholder="09--">
 
-<p>PRIORITY</p>
+<p class=title>PRIORITY</p>
 <select name=priority size=1>
 <option value=click >-----------</option>
 <option value=Low>Low</option>
@@ -47,7 +46,7 @@
 </select>
 <br />
 
-<p>REASON FOR CONTACTING US</p>
+<p class=title>REASON FOR CONTACTING US</p>
 <select name=type size=1>
 <option value=click >-----------</option>
 <option value=change>Change Item</option>
@@ -58,7 +57,7 @@
 </select>
 </br>
 
-<p>MESSAGE</p>
+<p  class=title>MESSAGE</p>
 <textarea name=message rows=6 cols=25 placeholder="Say anything...."></textarea></br>	
  <button type="submit" name='subm'>SUBMIT</button>
 </button>
