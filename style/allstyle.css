@@ -256,3 +256,17 @@ html {
     font-weight: bold;
     font-size: 18px;
 }
+.list-button{
+    padding: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #313634;
+}
+.logout{
+    font-style: none;
+    font-size: 13px;
+    text-decoration: none;
+    color:#57635f;
+    list-style: none;
+    font-weight: bold;
+}
