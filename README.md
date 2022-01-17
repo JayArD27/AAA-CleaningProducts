@@ -1,7 +1,7 @@
 # AAA-CleaningProducts
 # Description
 
-Website with a log-in, sign up and ordering system.
+This project is our final requirement in WEB DEVELOPMENT WITH LAB. Our client is AAA Cleaning Products and the system that we made for them is an ordering system that have a log in feature. The language that we used in this project is PHP with the help of HTML and CSS also with MySQL. We are thankful for Ms. Rheaxena Gorres for teaching us the PHP language and MySQL.
 
 Beneficiary/Client:
 AAA Cleaning Products
